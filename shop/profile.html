@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <div class="profile-container">
+
+        <h1>My Profile</h1>
+
+        <!-- Update Name -->
+        <div class="profile-section">
+
+            <h2>Update Profile</h2>
+
+            <form id="profileForm">
+
+                <div class="input-group">
+                    <label for="firstName">First Name</label>
+                    <input
+                        type="text"
+                        id="firstName"
+                        placeholder="Enter first name"
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="lastName">Last Name</label>
+                    <input
+                        type="text"
+                        id="lastName"
+                        placeholder="Enter last name"
+                    >
+                </div>
+
+                <button type="submit">Update Profile</button>
+
+                <p id="profileSuccess"></p>
+                <p id="profileError"></p>
+
+            </form>
+
+        </div>
+
+
+        <!-- Change Password -->
+        <div class="profile-section">
+
+            <h2>Change Password</h2>
+
+            <form id="passwordForm">
+
+                <div class="input-group">
+                    <label for="oldPassword">Old Password</label>
+                    <input
+                        type="password"
+                        id="oldPassword"
+                        placeholder="Enter old password"
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="newPassword">New Password</label>
+                    <input
+                        type="password"
+                        id="newPassword"
+                        placeholder="Enter new password"
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm new password"
+                    >
+                </div>
+
+                <button type="submit">Change Password</button>
+
+                <p id="passwordSuccess"></p>
+                <p id="passwordError"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="profile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MeShop - Shop</title>
+
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+        <div class="logo">
+            MeShop.
+        </div>
+
+        <div class="nav-links">
+            <a href="shop.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="index.html">Signup</a>
+            <a href="cart.html">My Cart</a>
+            <a href="profile.html">Profile</a>
+        </div>
+    </nav>
+    <!-- ================= MAIN ================= -->
+    <div class="main-container">
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar">
+
+            <!-- Colors -->
+            <div class="filter-section">
+                <h3>Colors</h3>
+                <label><input type="checkbox" class="color-filter" value="Red">Red</label>
+
+                <label><input type="checkbox" class="color-filter" value="Blue">Blue</label>
+
+                <label><input type="checkbox" class="color-filter" value="Green">Green</label>
+
+                <label><input type="checkbox" class="color-filter" value="Black">Black</label>
+
+                <label><input type="checkbox" class="color-filter" value="White">White</label>
+            </div>
+
+            <!-- Sizes -->
+            <div class="filter-section">
+                <h3>Sizes</h3>
+                <label><input type="checkbox" class="size-filter" value="S">S</label>
+
+                <label><input type="checkbox" class="size-filter" value="M"> M</label>
+
+                <label><input type="checkbox" class="size-filter" value="L">L</label>
+
+                <label><input type="checkbox" class="size-filter" value="XL">XL</label>
+            </div>
+
+            <!-- Rating -->
+            <div class="filter-section">
+                <h3>Rating</h3>
+
+                <input
+                    type="range"
+                    id="ratingFilter"
+                    min="0"
+                    max="5"
+                    value="0"
+                    step="1"
+                >
+                <div class="range-values">
+                    <span>0</span>
+                    <span id="ratingValue">5</span>
+                </div>
+            </div>
+
+            <!-- Price -->
+            <div class="filter-section">
+
+                <h3>Price Range</h3>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        class="price-filter"
+                        value="0-25"
+                    >
+                    $0 to $25
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        class="price-filter"
+                        value="25-50"
+                    >
+                    $25 to $50
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        class="price-filter"
+                        value="50-100"
+                    >
+                    $50 to $100
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        class="price-filter"
+                        value="100"
+                    >
+                    $100 onwards
+                </label>
+            </div>
+
+            <button id="applyFilter">
+                Apply Filter
+            </button>
+        </aside>
+
+        <!-- ================= SHOP CONTENT ================= -->
+        <main class="shop-content">
+
+            <!-- Search -->
+            <div class="search-container">
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search"
+                >
+            </div>
+
+            <!-- Categories -->
+            <div class="categories">
+                <button
+                    class="category-btn active"
+                    data-category="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="Mens"
+                >
+                    Mens
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="Womens"
+                >
+                    Womens
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="Jewellery"
+                >
+                    Jewellery
+                </button>
+
+                <button
+                    class="category-btn"
+                    data-category="Electronics"
+                >
+                    Electronics
+                </button>
+
+            </div>
+
+            <!-- Product Heading -->
+            <h2 id="categoryTitle">
+                Men's Clothing
+            </h2>
+
+            <!-- Products -->
+            <div id="productContainer" class="product-container">
+
+                <!-- Products will be inserted by JavaScript -->
+
+            </div>
+        </main>
+    </div>
+    <script src="shop.js"></script>
+</body>
+</html>
